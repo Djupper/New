@@ -16,7 +16,7 @@ public class task1 {
         // Решение задачи по лекции
 
         try (
-                Scanner scanner = new Scanner(new FileInputStream("D:\\IJ\\New\\ReadandWrite\\src\\input.txt"))) {
+                Scanner scanner = new Scanner(new FileInputStream("D:\\IJ\\New\\HomeWorke\\ReadandWrite\\input.txt"))) {
 
             StringBuffer data = new StringBuffer();
 
