@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/HomeWorke/HomeWorke.iml" filepath="$PROJECT_DIR$/HomeWorke/HomeWorke.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IT/HomeWorke/HomeWorke.iml" filepath="$PROJECT_DIR$/IT/HomeWorke/HomeWorke.iml" />
       <module fileurl="file://$PROJECT_DIR$/New.iml" filepath="$PROJECT_DIR$/New.iml" />
-      <module fileurl="file://$PROJECT_DIR$/academitScool/academitScool.iml" filepath="$PROJECT_DIR$/academitScool/academitScool.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ReadandWrite/ReadandWrite.iml" filepath="$PROJECT_DIR$/ReadandWrite/ReadandWrite.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IT/academitScool/academitScool.iml" filepath="$PROJECT_DIR$/IT/academitScool/academitScool.iml" />
     </modules>
   </component>
 </project>
