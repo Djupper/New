@@ -4,14 +4,6 @@ import java.util.Scanner;
 
 
 public class task5 {
-   /* public Integer countIn(String value) {
-
-       // return  ;
-    }*/
-
-
-
-
     public static void main(String[] args) throws IOException {
 
        /*
