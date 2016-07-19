@@ -30,8 +30,6 @@ public class task5 {
 
                 data.append(scanner.nextLine()).append("\n");
 
-
-
             }
 
             System.out.println(data.toString());
