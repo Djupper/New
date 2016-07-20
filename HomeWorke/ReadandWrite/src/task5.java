@@ -24,6 +24,7 @@ public class task5 {
 
             }
 
+
             System.out.println(data.toString());
 
         }

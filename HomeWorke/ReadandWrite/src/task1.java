@@ -1,12 +1,5 @@
-import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.lang.reflect.Field;
-import java.lang.reflect.Parameter;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.Scanner;
 
 
@@ -15,10 +8,9 @@ public class task1 {
 
         // Решение задачи по лекции
 
-        try (
-                Scanner scanner = new Scanner(new FileInputStream("D:\\IJ\\New\\HomeWorke\\ReadandWrite\\input.txt"))) {
+        try (Scanner scanner = new Scanner(new FileInputStream("D:\\IJ\\New\\HomeWorke\\ReadandWrite\\input.txt"))) {
 
-            StringBuffer data = new StringBuffer();
+            StringBuilder data = new StringBuilder();
 
             while (scanner.hasNextLine()) {
 
@@ -32,7 +24,7 @@ public class task1 {
 
     }
 }
-        //С учетом что мы изучили Лямбды можно так!
+//С учетом что мы изучили Лямбды можно так!
 
       /*  Files.lines(Paths.get("D:\\LJ\\FerstEdu\\HwReadWriteFromFile\\etg.prog.HWRWFF\\src\\input.txt"), StandardCharsets.UTF_8).forEach(System.out::println);
     }

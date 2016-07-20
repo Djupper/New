@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 /**
  * Created by AsusD on 18.07.2016.
  */
@@ -16,16 +18,15 @@ public class task4 {
         • Использовать indexOf и substring
         */
 
-        String url = " http://SomeServerName/abcd/dfdf.htm?dfdf=dfdf";
-        int index = url.indexOf("http://", 1);
-        if (index <= 1) {
-            String[] list = url.substring(8).split("/");
-            for (String v : list)
-                System.out.println(v);
-
-        } else {
-            System.out.println("URL is damage");
-        }
+        String url = "http://SomeServerName/abcd/dfdf.htm?dfdf=dfdf";
+        int index = url.indexOf("://");
+        StringBuilder list = new StringBuilder();
+        list.append(url).delete(0, index + 3);
+        String[] text = list.toString().split("/");
+        String name = text[0];
+        int in = url.indexOf(name);
+        System.out.println(in);
+        System.out.println(name);
 
     }
 }
