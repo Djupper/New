@@ -1,8 +1,3 @@
-import java.util.Arrays;
-
-/**
- * Created by AsusD on 18.07.2016.
- */
 public class task4 {
     public static void main(String[] args) {
         /*
@@ -17,15 +12,13 @@ public class task4 {
         • http://SomeServerName
         • Использовать indexOf и substring
         */
-
         String url = "http://SomeServerName/abcd/dfdf.htm?dfdf=dfdf";
         int index = url.indexOf("://");
+        int in = url.indexOf("/");
         StringBuilder list = new StringBuilder();
         list.append(url).delete(0, index + 3);
-        String[] text = list.toString().split("/");
-        String name = text[0];
-        int in = url.indexOf(name);
-        System.out.println(in);
+        int index2 = list.indexOf("/");
+        String name = list.substring(0, index2);
         System.out.println(name);
 
     }
