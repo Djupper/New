@@ -1,7 +1,7 @@
 /**
  * Created by AsusD on 18.07.2016.
  */
-public class task3 {
+public class Task3 {
     public static void main(String[] args) {
         int end = 100;
         StringBuilder builder = new StringBuilder();

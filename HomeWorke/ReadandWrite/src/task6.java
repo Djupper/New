@@ -4,7 +4,7 @@ import java.util.FormatFlagsConversionMismatchException;
 /**
  * Created by Prog on 19.07.2016.
  */
-public class task6 {
+public class Task6 {
     public static void main(String[] args) {
 
        /* -Разбить строку “1, 2, 3, 4, 5” и получить массив из
