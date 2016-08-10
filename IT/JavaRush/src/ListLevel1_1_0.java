@@ -6,9 +6,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 
-/**
- * Created by Prog on 27.07.2016.
- */
 public class ListLevel1_1_0 {
     /*
     1. Введи с клавиатуры 20 чисел, сохрани их в список и рассортируй по трём другим спискам:
