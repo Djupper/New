@@ -14,9 +14,25 @@ public class ListAddingInMiddle {
     public static void main(String[] args) {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         ArrayList<String> list = new ArrayList<>();
+        String word = "именно";
         list.add("мама");
-        дшые
+        list.add("мыла");
+        list.add("раму");
+
+        list.add(1,word);
+        list.add(3,word);
+        list.add(5,word);
+
+
+
+
+        for (int i = 0; i < list.size(); i++)
+        {
+
+            System.out.println( list.get(i) );
+        }
 
 
     }
+
 }
