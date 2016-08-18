@@ -1,20 +1,40 @@
 public static void main(String[] args)
 {
-Reader r = new InputStreamReader(System.in);
-BufferedReader reader = new BufferedReader(r);
+Reader r = new InputStreamReader(System.in);\\  BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+BufferedReader reader = new BufferedReader(r);\\
 
 //ввод строк с клавиатуры
 ArrayList<String> list = new ArrayList<String>();
 for (int i = 0; i < 10; i++)
 {
-  String s = reader.readLine();
-  list.add(s);
+  String s = reader.readLine(); // для int -  list.add(Integer.parseInt(reader.readLine()));
+  list.add(s);                    // для String - list.add(reader.readLine());
+
 }
 
 //вывод содержимого коллекции на экран
 for (int i = 0; i < list.size(); i++)
 {
-  int j = list.size() - i - 1 ;
+  int j = list.size() - i - 1 ;   \\System.out.println( list.get(i) );
   System.out.println( list.get(j) );
 }
 }
+/////////////////////////////////////////////////////
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+        ArrayList<Integer> list = new ArrayList<Integer>();
+        for (int i = 0; i < 10; i++)
+        {
+            list.add(Integer.parseInt(reader.readLine()));
+        }
+
+        Integer[] array = new Integer[list.size()];
+        for (int i = 0; i != list.size(); i++)
+        {
+            array[i] = list.get(i);
+        }
+        for (int i =0; i < array.length;i++){
+
+            System.out.print(array[i] + " " );
+        }
+ ///////////////////////////////////////////////////////

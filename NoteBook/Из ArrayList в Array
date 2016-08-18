@@ -1,0 +1,24 @@
+  BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+        ArrayList<Integer> list = new ArrayList<Integer>();
+        for (int i = 0; i < 5; i++)
+        {
+            list.add(Integer.parseInt(reader.readLine()));
+        }
+
+        Integer[] array = new Integer[list.size()];
+        for (int i = 0; i != list.size(); i++)
+        {
+            array[i] = list.get(i);
+
+
+        }
+        for (int i =0; i < array.length;i++){
+
+            System.out.println(array[i]);
+        }
+        for (int i = 0; i < list.size(); i++)
+        {
+            System.out.println(" ArrayList" + list.get(i).toString());
+        }
+    }
