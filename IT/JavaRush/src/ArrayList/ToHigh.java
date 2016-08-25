@@ -18,7 +18,7 @@ public class ToHigh {
             list.add(Integer.parseInt(reader.readLine()));
 
         }
-        for (int x = 0; x< list.size(); x++)
+        for (int x = 0; x < list.size(); x++)
         {
 
             System.out.println(list.get(x));
