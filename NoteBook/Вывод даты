@@ -1,0 +1,45 @@
+Вывести на экран текущую дату в аналогичном виде "21 02 2014".
+*/
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.SimpleTimeZone;
+
+public class Solution
+{
+    public static void main(String[] args)
+    {
+        //напишите тут ваш код
+        SimpleDateFormat dateFormat = new SimpleDateFormat("dd MM yyyy");
+        System.out.println(dateFormat.format(new Date()));
+    }
+}
+//////////////////////////////////////
+Паттерн даты и времени	Результат
+"e;yyyy.MM.dd G 'at' HH:mm:ss z"e;	2012.02.07 н.э. at 16:51:35 EET
+"e;EEE, MMM d, ''yy"e;	Вт, фев 7, '12
+"e;h:mm a"e;	4:51 PM
+"e;hh 'o''clock' a, zzzz"e;	04 o'clock PM, Eastern European Time
+"e;K:mm a, z"e;	4:51 PM, EET
+"e;yyyyy.MMMMM.dd GGG hh:mm aaa"e;	02012.Февраль.07 н.э. 04:51 PM
+"e;EEE, d MMM yyyy HH:mm:ss Z"e;	Вт, 7 фев 2012 16:51:35 +0200
+"e;yyMMddHHmmssZ"e;	120207165135+0200
+Английская локализация:
+
+Паттерн даты и времени	Результат
+"e;yyyy.MM.dd G 'at' HH:mm:ss z"e;	2012.02.07 AD at 16:55:57 EET
+"e;EEE, MMM d, ''yy"e;	Tue, Feb 7, '12
+"e;h:mm a"e;	4:55 PM
+"e;hh 'o''clock' a, zzzz"e;	04 o'clock PM, Eastern European Time
+"e;K:mm a, z"e;	4:55 PM, EET
+"e;yyyyy.MMMMM.dd GGG hh:mm aaa"e;	02012.February.07 AD 04:55 PM
+"e;EEE, d MMM yyyy HH:mm:ss Z"e;	Tue, 7 Feb 2012 16:55:57 +0200
+"e;yyMMddHHmmssZ"e;	120207165557+0200
+//////////////////////////////////////////
+Конструктор по умолчанию использует паттерн времени и формат символов по умолчанию для текущей локализации. То есть, для русской локализации стандартным паттерном времени является паттерн "dd.MM.yy HH:mm".
+
+Конструктор SimpleDateFormat(String pattern) принимает паттерн даты, в котором будет отдавать результат метод format(). В примере мы использовали паттерн "dd MMMM", который требует от format() вывести дату в следующем формате: "две цифры дня месяца" + "пробел" + "название месяца". В данном случае используется название месяца по умолчанию для текущей локализации, т.е., "Февраль".
+
+Конструктор SimpleDateFormat("dd MMMM", myDateFormatSymbols ) аналогичен предыдущему за исключением того, что название месяца используется не по умолчанию, а те, которые возвращает переменная myDateFormatSymbols. В свою очередь, в переменной myDateFormatSymbols мы переопределили метод getMonths() чтобы он возвращал названия месяцев с прописной буквы и в родительном падеже.
+
+Конструктор SimpleDateFormat("dd MMMM", Locale.ENGLISH) аналогичен конструктору SimpleDateFormat(String pattern), но использует заданную локализацию. В нашем случае это английская локализация Locale.ENGLISH.
