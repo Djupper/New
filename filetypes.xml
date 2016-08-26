@@ -2,6 +2,7 @@
   <component name="FileTypeManager" version="17">
     <extensionMap>
       <mapping pattern="Сортировка методом пузырька" type="PLAIN_TEXT" />
+      <mapping pattern="Ввод чисел и подсчет суммы" type="PLAIN_TEXT" />
       <mapping pattern="Сортировка массива" type="PLAIN_TEXT" />
       <mapping pattern="Ввод с клавиатуры" type="PLAIN_TEXT" />
       <mapping pattern="Из ArrayList в Array" type="PLAIN_TEXT" />
