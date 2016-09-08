@@ -20,18 +20,20 @@ public class ConsoleReader {
         return a; //напишите тут ваш код
     }
 
-    public static boolean readBoolean() throws Exception {
+    public static void readBoolean() throws Exception {
         //напишите тут ваш код
         boolean a = true;
         if (ConsoleReader.readString().equals("true")) {
             a = true;
             if (ConsoleReader.readString().equals("false")) {
                 a = false;
-                return a;
+              //  return a;
             }
         }
 
+
     }
 }
+
 
 

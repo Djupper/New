@@ -1,0 +1,57 @@
+Вывод на экран элементов Map
+public static void main(String[] args)
+{
+    Map<String, String> map = new HashMap<String, String>();
+    map.put("first", "Mama");
+    map.put("second", "Mila");
+    map.put("third", "Ramu");
+
+    for (Map.Entry<String, String> pair : map.entrySet())
+    {
+        String key = pair.getKey();                      //ключ
+        String value = pair.getValue();                  //значение
+        System.out.println(key + ":" + value);
+    }
+}
+/////////////////////////////////////
+Сокращенная запись
+public static void main(String[] args)
+{
+    Set<String> set = new HashSet<String>();
+    set.add("Mama");
+    set.add("Mila");
+    set.add("Ramu");
+
+    for (String text : set)
+    {
+        System.out.println(text);
+    }
+}
+////////////////////////////////////////
+Вывод на экран элементов Map
+public static void main(String[] args)
+{
+    //все элементы хранятся в парах
+    Map<String, String> map = new HashMap<String, String>();
+    map.put("first", "Mama");
+    map.put("second", "Mila");
+    map.put("third", "Ramu");
+
+    Iterator<Map.Entry<String, String>> iterator = map.entrySet().iterator();
+
+    while (iterator.hasNext())
+    {
+        //получение «пары» элементов
+        Map.Entry<String, String> pair = iterator.next();
+        String key = pair.getKey();            //ключ
+        String value = pair.getValue();        //значение
+        System.out.println(key + ":" + value);
+    }
+}
+*********************************************
+ HashMap<String, Cat> name = new HashMap<>();
+        for (String str : cats){
+            name.put(str , new Cat(str));
+        }
+return name;
+    }
