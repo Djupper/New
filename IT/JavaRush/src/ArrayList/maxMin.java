@@ -1,0 +1,67 @@
+package ArrayList;
+
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.List;
+
+/* Максимальное и минимальное числа в массиве
+Создать массив на 20 чисел. Заполнить его числами с клавиатуры. Найти максимальное и минимальное числа в массиве.
+Вывести на экран максимальное и минимальное числа через пробел.
+*/
+
+public class maxMin
+{
+    public static void main(String[] args) throws IOException
+    {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+        int maximum;
+        int minimum;
+
+        //напишите тут ваш код
+        ArrayList<Integer> list = new ArrayList<>();
+        for (int i = 0; i < 20; i++)
+        {
+            list.add(Integer.parseInt(reader.readLine()));
+        }
+
+        maximum = getMax(list);
+        minimum = getMin(list);
+
+        System.out.println(maximum);
+        System.out.println(minimum);
+    }
+
+    static int getMax(ArrayList<Integer> list)
+    {
+        int max = list.get(0);
+        for (int i = 0; i < list.size(); i++)
+        {
+            if (max < list.get(i))
+            {
+                max = list.get(i);
+            }
+
+        }
+        return max;
+    }
+
+    static int getMin(ArrayList<Integer> list)
+    {
+        int min = list.get(0);
+        for (int i = 0; i < list.size(); i++)
+        {
+            if (min > list.get(i))
+            {
+                min = list.get(i);
+            }
+
+        }
+        return min;
+    }
+
+}
+
