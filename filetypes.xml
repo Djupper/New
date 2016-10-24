@@ -1,11 +1,12 @@
 <application>
   <component name="FileTypeManager" version="17">
     <extensionMap>
+      <mapping pattern="Работа с датой" type="PLAIN_TEXT" />
+      <mapping pattern="Сортировка методом пузырька" type="PLAIN_TEXT" />
       <mapping pattern="Ввод чисел и подсчет суммы" type="PLAIN_TEXT" />
       <mapping pattern="Сортировка массива" type="PLAIN_TEXT" />
       <mapping pattern="Ввод с клавиатуры" type="PLAIN_TEXT" />
       <mapping pattern="Из ArrayList в Array" type="PLAIN_TEXT" />
-      <mapping pattern="Сортировка методом пузырька" type="PLAIN_TEXT" />
       <mapping pattern="Вывод даты" type="PLAIN_TEXT" />
       <mapping pattern="HachMap" type="PLAIN_TEXT" />
     </extensionMap>
