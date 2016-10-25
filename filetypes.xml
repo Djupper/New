@@ -11,6 +11,7 @@
       <mapping pattern="Сортировка методом пузырька" type="PLAIN_TEXT" />
       <mapping pattern="Вывод даты" type="PLAIN_TEXT" />
       <mapping pattern="HachMap" type="PLAIN_TEXT" />
+      <mapping ext="out" type="PLAIN_TEXT" />
     </extensionMap>
   </component>
 </application>
