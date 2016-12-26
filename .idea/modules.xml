@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/IT/CS50/CS50.iml" filepath="$PROJECT_DIR$/IT/CS50/CS50.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Работа с HTTP/Hello/Hello.iml" filepath="$PROJECT_DIR$/Работа с HTTP/Hello/Hello.iml" />
       <module fileurl="file://$PROJECT_DIR$/IT/HomeWorke/HomeWorke.iml" filepath="$PROJECT_DIR$/IT/HomeWorke/HomeWorke.iml" />
       <module fileurl="file://$PROJECT_DIR$/IT/JavaRush/JavaRush.iml" filepath="$PROJECT_DIR$/IT/JavaRush/JavaRush.iml" />
       <module fileurl="file://$PROJECT_DIR$/IT/MVC/MVC.iml" filepath="$PROJECT_DIR$/IT/MVC/MVC.iml" />

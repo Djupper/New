@@ -1,0 +1,14 @@
+public static void main(String[] args)
+{
+ MyClass myObject = new MyClass();
+ OutputStream outStream = new FileOutputStream ("c:/my-object-data.txt");
+
+ while (myObject.available() > 0)
+ {
+  int data = myObject.read(); //читаем один int из потока для чтения
+  outStream.write(data); //записываем прочитанный int в другой поток.
+ }
+
+ outStream.close();
+}
+///////////////////////////////////////

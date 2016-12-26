@@ -1,0 +1,20 @@
+package ru.etg.prog;
+
+import java.io.IOException;
+import java.io.PrintStream;
+import java.io.PrintWriter;
+
+public class Servlet extends javax.servlet.http.HttpServlet {
+   /* protected void doPost(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response) throws javax.servlet.ServletException, IOException {
+
+    }*/
+
+    protected void doGet(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response) throws javax.servlet.ServletException, IOException {
+        System.out.println("Test!");
+        response.setContentType("text/html");
+        response.setCharacterEncoding("UTF-8");
+        PrintWriter out = response.getWriter();
+        out.println("<h3>hello from servlet Женя!</h3><br>Again");
+        out.close();
+    }
+}
