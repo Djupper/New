@@ -38,8 +38,12 @@
           <option name="url" value="https://github.com/Djupper/Tanks.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="https://github.com/Djupper/PowerOff.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
-    <option name="cloneParentDir" value="D:\IJ" />
+    <option name="cloneParentDir" value="D:\IJ\Git" />
   </component>
 </application>
